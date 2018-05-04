@@ -1,11 +1,55 @@
-# Machine Learning Engineer Nanodegree
-## Specializations
-## Project: Capstone Proposal and Capstone Project
+# Nanodegree Engenheiro de Machine Learning
+## Projeto final
 
-**Note**
+### Instalação
+Este projeto requer **Python 3.\*** e as seguintes bibliotecas do Python instaladas:
 
-The Capstone is a two-staged project. The first is the proposal component, where you can receive valuable feedback about your project idea, design, and proposed solution. This must be completed prior to your implementation and submitting for the capstone project. 
+- [NumPy](http://www.numpy.org/)
+- [Pandas](http://pandas.pydata.org/)
+- [scikit-learn](http://scikit-learn.org/stable/)
+- [IPython](https://ipython.org/)
+- [keras](https://keras.io/)
+- [librosa](http://github.com/librosa/librosa)
 
-You can find the [capstone proposal rubric here](https://review.udacity.com/#!/rubrics/410/view), and the [capstone project rubric here](https://review.udacity.com/#!/rubrics/108/view). Please ensure that you are following directions correctly before submitting these two stages which encapsulate your capstone.
+Você também precisará ter o software instalado para executar e executar o [Jupyter Notebook](http://ipython.org/notebook.html)
 
-Please email [machine-support@udacity.com](mailto:machine-support@udacity.com) if you have any questions.
+Se você ainda não tem o Python instalado, é altamente recomendado que você instale a distribuição [Anaconda] (http://continuum.io/downloads) do Python, que já tem os pacotes acima e mais incluídos.
+
+Para ajudar na criação do ambiente pode-se utilizar os seguintes comandos da **Anaconda**:
+- Para Windows:
+
+  `conda create --name capstone --file requirements/spec-file-windows.txt` ou
+
+  `conda env create -f requirements/environment-windows.yml`
+
+- Para Linux:
+ 
+  `conda create --name capstone --file requirements/spec-file-linux.txt` ou
+ 
+  `conda env create -f requirements/environment-linux.yml`
+
+### Código
+Os códigos são fornecidos nos arquivos `Capstone-deepLearning.ipynb`e `Capstone-CNN.ipynb`.
+
+### Execução
+Em um terminal ou janela de comando, navegue até o diretório de projeto de nível superior `report-capstone/` (que contém este README) e execute um dos seguintes comandos:
+
+```bash
+ipython notebook Capstone-deepLearning.ipynb
+ipython notebook Capstone-CNN.ipynb
+```  
+ou
+```bash
+jupyter notebook Capstone-deepLearning.ipynb
+jupyter notebook Capstone-CNN.ipynb
+```
+
+Isso abrirá o software do Notebook Jupyter e o arquivo de projeto no seu navegador.
+
+### Dados
+Os dados utilizados no projeto foram retirados da competição [TensorFlow Speech Recognition Challenge](https://www.kaggle.com/c/tensorflow-speech-recognition-challenge/data) do kaggle.
+
+A base de dados contém subpastas com comandos de voz de um segundo, com o nome da pasta sendo a palavra dita no clipe de áudio.
+
+As palavras no conjunto de áudio são: bed, bird, cat, dog, down, eight, five, four, go, happy, house, left, marvin,
+nine, no, one, on, one, right, seven, sheila, six, stop, three, two, up, wow, yes e zero.
